@@ -1,0 +1,56 @@
+h2 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 72px;
+}
+
+h5 {
+  color: #e3e3e3;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: normal;
+}
+
+h6 {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--h6-color);
+}
+
+span {
+  font-size: 14px;
+  font-family: "DM Sans", sans-serif;
+  line-height: 21px;
+  color: var(--span-color);
+}
+
+.lg-title {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+}
+
+.sm-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.xsm-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 16px;
+  color: var(--p-color);
+  line-height: 21px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: normal;
+}

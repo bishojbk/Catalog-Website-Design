@@ -1,0 +1,10 @@
+.news {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  &_container {
+    margin: 0px 100px 100px 100px;
+  }
+}

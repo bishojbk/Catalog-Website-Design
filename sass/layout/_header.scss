@@ -1,0 +1,27 @@
+.header {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  border-bottom: 1px solid white;
+
+  &_container {
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header_logo {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header_logo_name {
+    margin-top: 12px;
+    margin-left: 10px;
+  }
+
+  .nav_search {
+    cursor: pointer;
+  }
+}

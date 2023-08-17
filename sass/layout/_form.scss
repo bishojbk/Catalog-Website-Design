@@ -1,0 +1,50 @@
+.form {
+  label {
+    color: #24272e;
+  }
+
+  .first-name {
+    margin-right: 105px;
+  }
+
+  .firstname {
+    width: 140%;
+  }
+
+  .lastname {
+    width: 140%;
+  }
+
+  input {
+    font-family: "Inter", sans-serif;
+    padding: 20px;
+    margin-bottom: 20px;
+    outline: none;
+    background: transparent;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.1);
+    width: 97%;
+  }
+
+  textarea {
+    padding: 10px;
+    outline: none;
+    width: 100%;
+    background: transparent;
+    // font-family: inherit;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  }
+}
+
+.form-name {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+button {
+  margin: 10px auto;
+}

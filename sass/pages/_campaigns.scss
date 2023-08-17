@@ -1,0 +1,33 @@
+.campaigns {
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+
+  &_container {
+    margin: 100px 100px;
+  }
+
+  .grid-items {
+    text-align: start;
+    border-radius: 20px;
+    background: #fff;
+
+    img {
+      width: 100%;
+      border-radius: 10px 10px 0px 0px;
+    }
+  }
+
+  .grid-details {
+    padding: 20px 30px;
+  }
+
+  .grid-link {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+  }
+}

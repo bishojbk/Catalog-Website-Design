@@ -1,0 +1,23 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+
+  .grid-items {
+    text-align: start;
+    border-radius: 20px;
+    background: var(--background-color);
+    padding: 20px 20px;
+
+    img {
+      width: 100%;
+      border-radius: 10px 10px 0px 0px;
+    }
+  }
+
+  .grid-link {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+  }
+}

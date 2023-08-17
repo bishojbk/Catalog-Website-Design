@@ -1,0 +1,13 @@
+.contact-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &_container {
+    margin: 100px 100px 30px 100px;
+  }
+
+  &_header {
+    text-align: center;
+  }
+}

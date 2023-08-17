@@ -1,0 +1,55 @@
+.btn-primary {
+  margin: 0 auto; //Center the dev horizontally
+  //it works because it is inside a block element(div), block elements take full width of its parent container.
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+  width: 250px;
+  border-radius: 8px;
+  border: 1px solid #ffe500;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  cursor: pointer;
+
+  &:hover {
+    a {
+      color: aqua;
+    }
+    g {
+      path {
+        fill: aqua;
+      }
+    }
+  }
+
+  svg {
+    margin-left: 10px;
+  }
+}
+
+.btn-secondary {
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  padding: 15px 20px;
+  width: 150px;
+  border-radius: 4px;
+  border: 1.5px solid #1d6fa3;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  cursor: pointer;
+  color: black;
+  font-weight: 600;
+}
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}

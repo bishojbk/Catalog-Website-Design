@@ -1,0 +1,28 @@
+.resources {
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  &_container {
+    margin: 100px 100px 50px 100px;
+  }
+
+  .grid-items {
+    background-color: #fff;
+    padding: 50px;
+
+    &_logo {
+      display: flex;
+      align-items: center;
+
+      svg {
+        background: var(--svg-background-color);
+        padding: 20px;
+        border-radius: 15px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
