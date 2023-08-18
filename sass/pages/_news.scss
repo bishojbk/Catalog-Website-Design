@@ -8,3 +8,9 @@
     margin: 0px 100px 100px 100px;
   }
 }
+
+@media all and (max-width: 768px) {
+  .news_container {
+    margin: 20px;
+  }
+}

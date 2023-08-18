@@ -29,3 +29,20 @@ form {
 button {
   margin: 10px auto;
 }
+
+@media all and (max-width: 768px) {
+  form {
+    .form-control {
+      gap: 0px;
+      input {
+        width: 60%;
+      }
+    }
+    input {
+      width: 80%;
+    }
+    textarea {
+      width: 83%;
+    }
+  }
+}

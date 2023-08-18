@@ -1,6 +1,5 @@
 .image-container {
   margin: 40px 0px;
-
   overflow: hidden;
   width: 450px;
   height: 500px;
@@ -19,5 +18,12 @@
 
   .sm-title {
     margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .image-container {
+    width: 430px;
+    height: 480px;
   }
 }

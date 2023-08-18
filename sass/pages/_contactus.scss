@@ -11,3 +11,9 @@
     text-align: center;
   }
 }
+
+@media all and (max-width: 768px) {
+  .contact-us_container {
+    margin: 20px;
+  }
+}

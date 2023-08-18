@@ -26,13 +26,30 @@
   }
 
   .ham-menu {
-    width: 2%;
+    width: 25px;
     display: none;
   }
 
   @media screen and (max-width: 768px) {
     .ham-menu {
       display: block;
+    }
+
+    nav,
+    .nav_search {
+      display: none;
+    }
+  }
+
+  .menu-items {
+    display: absolute;
+
+    ul {
+      list-style: none;
+      li {
+        text-decoration: none;
+        color: white;
+      }
     }
   }
 }
