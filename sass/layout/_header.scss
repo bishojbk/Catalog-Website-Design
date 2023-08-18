@@ -24,4 +24,15 @@
   .nav_search {
     cursor: pointer;
   }
+
+  .ham-menu {
+    width: 2%;
+    display: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    .ham-menu {
+      display: block;
+    }
+  }
 }

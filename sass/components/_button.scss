@@ -44,6 +44,10 @@
 }
 
 #btn-back-to-top {
+  display: none;
+}
+
+.btn-back-top {
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -51,5 +55,11 @@
   outline: none;
   border: none;
   cursor: pointer;
-  display: none;
+  transition: 1s ease-in-out;
+  display: block;
+  z-index: 999;
+
+  svg {
+    width: 10%;
+  }
 }
