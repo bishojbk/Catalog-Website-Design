@@ -7,3 +7,7 @@
 svg {
   margin-left: 6px;
 }
+
+.anchor-title:hover ~ svg {
+  margin-left: 15px;
+}
