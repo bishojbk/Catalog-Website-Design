@@ -12,7 +12,6 @@
   }
 
   &_container {
-    margin: 0px 100px;
     padding: 100px 0px;
   }
 
@@ -79,5 +78,13 @@
 
   .footer_links {
     margin: 0;
+  }
+
+  .footer_bottom_container {
+    margin: 0;
+
+    svg {
+      width: 100%;
+    }
   }
 }
