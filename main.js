@@ -10,9 +10,6 @@ const resources = document.getElementById("dropdown-resources");
 const search = document.querySelector(".nav_search");
 const searchBar = document.querySelector(".search-model");
 let count = 0;
-
-console.log(search);
-
 search.addEventListener("click", (e) => {
   count = count + 1;
 

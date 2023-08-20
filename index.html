@@ -14,12 +14,21 @@
     />
   </head>
   <body>
-    <img
-      src="../../images/up.png"
-      alt="up-arrow"
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="red"
       id="btn-back-to-top"
-      class="top"
-    />
+    >
+      <g mask="url(#mask0_110_4708)">
+        <path
+          d="M11 20V7.825L5.4 13.425L4 12L12 4L20 12L18.6 13.425L13 7.825V20H11Z"
+          fill="#7C7D82"
+        />
+      </g>
+    </svg>
 
     <!-- Header Section -->
 
@@ -1132,7 +1141,7 @@
 
       <!--Contact Us Section-->
       <section class="contact-us">
-        <div class="contact-us_container">
+        <div class="contact-us_">
           <div class="contact-us_header">
             <h4 class="lg-title">Contact Us</h4>
             <h6>
@@ -1143,22 +1152,30 @@
 
           <form action="submit">
             <div class="form-control">
-              <div class="first-name">
+              <div class="form-elements">
                 <h3>First name</h3>
                 <input type="text" placeholder="Firstname" class="firstname" />
               </div>
 
-              <div class="last-name">
+              <div class="form-elements">
                 <h3>Last name</h3>
                 <input type="text" placeholder="Lastname" class="lastname" />
               </div>
             </div>
 
-            <h3>Email</h3>
-            <input type="email" placeholder="Email" class="email" />
+            <div class="form-elements">
+              <h3>Email</h3>
+              <input type="email" placeholder="Email" class="email" />
+            </div>
 
-            <h3>Message</h3>
-            <textarea rows="8" placeholder="Message" class="message"></textarea>
+            <div class="form-elements">
+              <h3>Message</h3>
+              <textarea
+                rows="8"
+                placeholder="Message"
+                class="message"
+              ></textarea>
+            </div>
 
             <button type="submit" class="btn-secondary" id="form-btn">
               Submit
