@@ -29,16 +29,23 @@
   padding: 5px;
 }
 
+@media screen and (max-width: 1240px) {
+  .who-we-are_right {
+    margin: 0;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .who-we-are_container {
     margin: 20px;
   }
 
-  .who-we-are_right {
-    margin: 0;
-  }
+  .who-we-are_carousel_container {
+    flex-direction: column;
 
-  .who-we-are_carousel {
-    display: none;
+    .left-arrow,
+    .right-arrow {
+      display: none;
+    }
   }
 }

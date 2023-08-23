@@ -9,37 +9,66 @@ const dropdown = document.querySelector(".dropdown-content");
 const resources = document.getElementById("dropdown-resources");
 const search = document.querySelector(".nav_search");
 const searchBar = document.querySelector(".search-model");
-let count = 0;
-search.addEventListener("click", (e) => {
-  count = count + 1;
+const hamMenu = document.querySelector(".ham-menu");
+const menuItems = document.querySelector(".menu-items");
+const cross = document.querySelector(".cross");
 
-  if (!count % 2 == 0) {
-    searchBar.style.display = "block";
-  }
+let count = false;
 
-  if (count % 2 == 0) {
-    searchBar.style.display = "none";
+hamMenu.addEventListener("click", () => {
+  if (!count) {
+    menuItems.style.display = "block";
+    count = true;
+  } else {
+    menuItems.style.display = "none";
+    count = false;
   }
 });
 
+menuItems.addEventListener("click", (event) => {
+  event.stopPropagation();
+});
+
+let searchBarVisible = false;
+
+search.addEventListener("click", (e) => {
+  if (!searchBarVisible) {
+    searchBar.style.display = "block";
+    searchBarVisible = true;
+  } else {
+    searchBar.style.display = "none";
+    searchBarVisible = false;
+  }
+});
+
+cross.addEventListener("click", () => {
+  searchBar.style.display = "none";
+  searchBarVisible = false;
+});
+
+searchBar.addEventListener("click", (event) => {
+  event.stopPropagation();
+});
+
 document.addEventListener("click", (e) => {
-  e.preventDefault();
   if (!e.target.classList.contains("dropdown-resources")) {
     checkbox.checked = false;
+    resourcesVisible = false;
 
     if (!checkbox.checked) {
       dropdown.style.display = "none";
     }
   }
 });
-resources.addEventListener("click", () => {
-  count = count + 1;
 
-  if (!count % 2 == 0) {
+let resourcesVisible = false;
+resources.addEventListener("click", () => {
+  if (!resourcesVisible) {
     checkbox.checked = true;
-  }
-  if (count % 2 == 0) {
+    resourcesVisible = true;
+  } else {
     checkbox.checked = false;
+    resourcesVisible = false;
   }
 
   if (checkbox.checked) {
@@ -48,6 +77,10 @@ resources.addEventListener("click", () => {
   if (!checkbox.checked) {
     dropdown.style.display = "none";
   }
+});
+
+dropdown.addEventListener("click", (event) => {
+  event.stopPropagation();
 });
 
 window.addEventListener("scroll", () => {

@@ -12,7 +12,8 @@
   }
 
   &_container {
-    padding: 100px 100px;
+    margin: 100px 100px;
+    padding: 100px 0px;
   }
 
   &_grid-container {
@@ -72,8 +73,12 @@
 }
 
 @media all and (max-width: 768px) {
+  .footer_container {
+    padding: 20px 0;
+    margin: 20px;
+  }
   .footer_grid-container {
-    gap: 10px;
+    gap: px;
   }
 
   .footer_links {
@@ -81,10 +86,10 @@
   }
 
   .footer_bottom_container {
-    margin: 0;
+    margin: 20px;
 
     svg {
-      width: 100%;
+      width: 40%;
     }
   }
 }
