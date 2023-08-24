@@ -1,11 +1,9 @@
 .news {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
 
   &_container {
-    margin: 0px 100px 100px 100px;
+    margin: 100px 100px 50px 100px;
+    padding: 50px 0px;
   }
 }
 

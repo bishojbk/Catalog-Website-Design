@@ -22,8 +22,18 @@
   }
 
   .ham-menu {
-    width: 25px;
     position: relative;
+  }
+
+  .ham-open {
+    width: 25px;
+  }
+
+  .ham-cross {
+    position: absolute;
+    top: -15px;
+    right: 0px;
+    display: none;
   }
 
   .nav_search {
@@ -33,24 +43,31 @@
 
 .menu-items {
   display: none;
-  position: absolute;
-  right: -20px;
-  top: 40px;
-  width: 100vw;
+  position: fixed;
+  top: 100px;
+  left: 10px;
+  right: 10px;
 
   ul {
     list-style: none;
-    background-color: rgb(3, 3, 3);
-    padding: 150px 20px 130px 20px;
+    background-color: white;
+    padding: 50px 0px;
+    border-radius: 50px;
+    display: grid;
+    place-items: center;
+    height: 50vh;
 
     li {
       text-decoration: none;
       color: white;
       margin-bottom: 50px;
+      color: black;
 
       a {
         cursor: pointer;
-        font-size: 48px;
+        font-size: 18px;
+        color: black;
+
         &:hover {
           color: red;
         }

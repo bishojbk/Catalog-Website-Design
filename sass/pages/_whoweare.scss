@@ -37,15 +37,36 @@
 
 @media screen and (max-width: 768px) {
   .who-we-are_container {
-    margin: 20px;
+    margin: 20px 40px;
   }
-
   .who-we-are_carousel_container {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 20px;
 
     .left-arrow,
     .right-arrow {
       display: none;
     }
+  }
+}
+
+@media screen and (min-width: 2500px) {
+  .who-we-are_container {
+    .grid-container {
+      display: block;
+    }
+  }
+
+  .who-we-are_right {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .who-we-are_carousel_container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 20px 40px;
   }
 }

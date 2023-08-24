@@ -12,6 +12,9 @@
   justify-content: center;
   align-items: center;
   height: 800px;
+  opacity: 1;
+  position: relative;
+  z-index: -2;
 
   h5 {
     margin-bottom: 50px;
@@ -38,5 +41,11 @@
         fill: aqua;
       }
     }
+  }
+}
+
+@media all and (max-width: 768px) {
+  .banner_container {
+    margin: 20px 40px;
   }
 }

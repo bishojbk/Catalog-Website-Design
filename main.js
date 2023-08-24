@@ -9,18 +9,32 @@ const dropdown = document.querySelector(".dropdown-content");
 const resources = document.getElementById("dropdown-resources");
 const search = document.querySelector(".nav_search");
 const searchBar = document.querySelector(".search-model");
-const hamMenu = document.querySelector(".ham-menu");
+const hamOpen = document.querySelector(".ham-open");
 const menuItems = document.querySelector(".menu-items");
 const cross = document.querySelector(".cross");
+const banner = document.querySelector(".banner");
+const hamCross = document.querySelector(".ham-cross");
+const hamMenu = document.querySelector(".ham-menu");
+const headerLogo = document.querySelector(".header_logo");
+const header = document.querySelector(".header");
+// const noScroll = document.querySelector(".no-scroll");
 
 let count = false;
 
 hamMenu.addEventListener("click", () => {
   if (!count) {
     menuItems.style.display = "block";
+    hamCross.style.display = "block";
+    hamOpen.style.display = "none";
+    document.body.classList.add("no-scroll");
+    headerLogo.classList.add("unclickable");
     count = true;
   } else {
     menuItems.style.display = "none";
+    hamCross.style.display = "none";
+    hamOpen.style.display = "block";
+    document.body.classList.remove("no-scroll");
+    headerLogo.classList.remove("unclickable");
     count = false;
   }
 });
@@ -31,20 +45,30 @@ menuItems.addEventListener("click", (event) => {
 
 let searchBarVisible = false;
 
-search.addEventListener("click", (e) => {
+search.addEventListener("click", () => {
   if (!searchBarVisible) {
     searchBar.style.display = "block";
     searchBarVisible = true;
+    document.body.classList.add("no-scroll");
+    headerLogo.classList.add("unclickable");
   } else {
     searchBar.style.display = "none";
     searchBarVisible = false;
+    document.body.classList.remove("no-scroll");
+    headerLogo.classList.remove("unclickable");
   }
 });
 
 cross.addEventListener("click", () => {
   searchBar.style.display = "none";
   searchBarVisible = false;
+  document.body.classList.remove("no-scroll");
+  headerLogo.classList.remove("unclickable");
 });
+
+if ((searchBarVisible = true)) {
+  console.log("YEs");
+}
 
 searchBar.addEventListener("click", (event) => {
   event.stopPropagation();
@@ -108,6 +132,8 @@ submit.addEventListener("click", (e) => {
 });
 
 scroll.addEventListener("click", () => {
-  document.documentElement.classList.add("scrolling");
-  document.documentElement.scrollTop = 0;
+  document.documentElement.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
 });
