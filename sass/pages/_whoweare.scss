@@ -3,6 +3,11 @@
     margin: 100px 100px;
   }
 
+  .gridcontainer {
+    display: flex;
+    gap: 10px;
+  }
+
   &_link {
     display: flex;
     align-items: center;
@@ -29,7 +34,12 @@
   padding: 5px;
 }
 
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 1374px) {
+  .gridcontainer {
+    gap: 0px;
+    flex-wrap: wrap;
+  }
+
   .who-we-are_right {
     margin: 0;
   }
@@ -39,6 +49,12 @@
   .who-we-are_container {
     margin: 20px 40px;
   }
+
+  .gridcontainer {
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+
   .who-we-are_carousel_container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -53,13 +69,24 @@
 
 @media screen and (min-width: 2500px) {
   .who-we-are_container {
-    .grid-container {
-      display: block;
+    .who-we-are_right {
+      margin: 0;
     }
-  }
 
-  .who-we-are_right {
-    margin: 0;
+    .gridcontainer {
+      display: flex;
+      flex-direction: column;
+
+      .who-we-are_left {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+      }
+
+      .who-we-are_right {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+      }
+    }
   }
 }
 
