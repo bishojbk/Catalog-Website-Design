@@ -116,3 +116,16 @@
     font-size: 16px;
   }
 }
+
+@media screen and (min-width: 3000px) {
+  .search-model {
+    width: 600px;
+    background-color: white;
+    color: black;
+    padding: 15px;
+    border-radius: 10px;
+    display: none;
+    left: auto;
+    right: auto;
+  }
+}

@@ -24,8 +24,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+  max-width: 1246px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
 }

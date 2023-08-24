@@ -11,14 +11,10 @@
     opacity: 0.8;
   }
 
-  &_container {
-    margin: 30px 100px;
-    padding: 100px 0px;
-  }
-
   &_grid_container {
     display: flex;
     justify-content: space-between;
+    padding: 100px 0px;
 
     svg {
       cursor: pointer;
@@ -62,7 +58,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 30px 100px;
+    padding: 30px 0px;
   }
 }
 

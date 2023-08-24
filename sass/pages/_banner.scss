@@ -8,13 +8,11 @@
   background-size: cover;
   background-position: center center;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 800px;
-  opacity: 1;
-  position: relative;
-  z-index: -2;
+
+  &_container {
+    padding: 250px 90px;
+  }
 
   h5 {
     margin-bottom: 50px;

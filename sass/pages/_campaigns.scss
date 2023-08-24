@@ -1,13 +1,10 @@
 .campaigns {
   background-color: var(--background-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   position: relative;
 
   &_container {
-    margin: 100px 100px;
+    padding: 100px 0;
   }
 
   .grid-items {

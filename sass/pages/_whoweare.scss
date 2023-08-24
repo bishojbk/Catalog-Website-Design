@@ -1,6 +1,6 @@
 .who-we-are {
   &_container {
-    margin: 100px 100px;
+    padding: 100px 0;
   }
 
   .gridcontainer {
@@ -25,8 +25,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 80px 0px;
-      margin: 100px 100px;
+      padding: 100px 0px;
     }
   }
 }
@@ -79,12 +78,14 @@
 
       .who-we-are_left {
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 100px;
       }
 
       .who-we-are_right {
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 100px;
       }
     }
   }
