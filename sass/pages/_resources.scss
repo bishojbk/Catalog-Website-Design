@@ -3,7 +3,7 @@
   text-align: center;
 
   &_container {
-    padding: 100px 0px;
+    @include padding();
   }
 
   .grid-items {
@@ -21,10 +21,5 @@
         margin-right: 10px;
       }
     }
-  }
-}
-@media all and (max-width: 768px) {
-  .resources_container {
-    margin: 20px 40px;
   }
 }

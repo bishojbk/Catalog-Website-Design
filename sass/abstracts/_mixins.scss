@@ -1,0 +1,26 @@
+@mixin footer-grid-container() {
+  @media screen and (max-width: 1544px) {
+    .footer_grid_container {
+      grid-gap: 50px;
+    }
+  }
+}
+
+@mixin form() {
+  @media screen and (max-width: 768px) {
+    .form-control {
+      display: block;
+    }
+  }
+}
+
+@mixin padding() {
+  padding: 100px 0px;
+}
+
+@mixin search-model-lg() {
+  @media screen and (min-width: 3000px) {
+    left: auto;
+    right: auto;
+  }
+}

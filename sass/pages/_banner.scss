@@ -7,11 +7,14 @@
     url("../../images/homepage-bg.jpg");
   background-size: cover;
   background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   height: 800px;
 
   &_container {
-    padding: 250px 90px;
+    padding: 0 20px;
   }
 
   h5 {
@@ -42,8 +45,9 @@
   }
 }
 
-@media all and (max-width: 768px) {
-  .banner_container {
-    margin: 20px 40px;
+@media screen and (max-width: 440px) {
+  .banner {
+    display: block;
+    padding: 250px 0px 0;
   }
 }

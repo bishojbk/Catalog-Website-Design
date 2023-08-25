@@ -2,12 +2,6 @@
   text-align: center;
 
   &_container {
-    padding: 100px 0px;
-  }
-}
-
-@media all and (max-width: 768px) {
-  .news_container {
-    margin: 20px;
+    @include padding();
   }
 }

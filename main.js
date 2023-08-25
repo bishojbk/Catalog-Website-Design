@@ -17,7 +17,6 @@ const hamCross = document.querySelector(".ham-cross");
 const hamMenu = document.querySelector(".ham-menu");
 const headerLogo = document.querySelector(".header_logo");
 const header = document.querySelector(".header");
-// const noScroll = document.querySelector(".no-scroll");
 
 let count = false;
 
@@ -43,9 +42,10 @@ menuItems.addEventListener("click", (event) => {
   event.stopPropagation();
 });
 
-let searchBarVisible = false;
+let searchBarVisible = true;
 
 search.addEventListener("click", () => {
+  console.log("clicked");
   if (!searchBarVisible) {
     searchBar.style.display = "block";
     searchBarVisible = true;
@@ -64,11 +64,9 @@ cross.addEventListener("click", () => {
   searchBarVisible = false;
   document.body.classList.remove("no-scroll");
   headerLogo.classList.remove("unclickable");
-});
 
-if ((searchBarVisible = true)) {
-  console.log("YEs");
-}
+
+});
 
 searchBar.addEventListener("click", (event) => {
   event.stopPropagation();

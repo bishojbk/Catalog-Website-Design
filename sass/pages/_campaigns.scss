@@ -4,7 +4,7 @@
   position: relative;
 
   &_container {
-    padding: 100px 0;
+    @include padding();
   }
 
   .grid-items {
@@ -26,11 +26,5 @@
     margin-top: 20px;
     display: flex;
     align-items: center;
-  }
-}
-
-@media all and (max-width: 768px) {
-  .campaigns_container {
-    margin: 20px 40px;
   }
 }

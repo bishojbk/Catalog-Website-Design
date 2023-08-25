@@ -1,6 +1,6 @@
 .who-we-are {
   &_container {
-    padding: 100px 0;
+    @include padding();
   }
 
   .gridcontainer {
@@ -25,15 +25,17 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 100px 0px;
+
+      @include padding();
     }
   }
 }
+
 .company-name {
   padding: 5px;
 }
 
-@media screen and (max-width: 1374px) {
+@media screen and (max-width: 1240px) {
   .gridcontainer {
     gap: 0px;
     flex-wrap: wrap;
@@ -45,10 +47,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .who-we-are_container {
-    margin: 20px 40px;
-  }
-
   .gridcontainer {
     gap: 50px;
     flex-wrap: wrap;
@@ -57,7 +55,7 @@
   .who-we-are_carousel_container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin: 20px;
+    padding: 20px 0px;
 
     .left-arrow,
     .right-arrow {
@@ -76,12 +74,7 @@
       display: flex;
       flex-direction: column;
 
-      .who-we-are_left {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 100px;
-      }
-
+      .who-we-are_left,
       .who-we-are_right {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -95,6 +88,6 @@
   .who-we-are_carousel_container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    margin: 20px 40px;
+    padding: 20px 0;
   }
 }

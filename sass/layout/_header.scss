@@ -5,15 +5,10 @@
   border-bottom: 1px solid white;
 
   &_container {
-    margin: 20px 100px;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-
-  .header_logo {
-    display: flex;
-    justify-content: space-between;
   }
 
   .header_logo_name {
@@ -23,6 +18,7 @@
 
   .ham-menu {
     position: relative;
+    display: none;
   }
 
   .ham-open {
@@ -76,19 +72,15 @@
   }
 }
 
-@media screen and (min-width: 1240px) {
-  .ham-menu {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 992px) {
   .header_container {
     margin: 20px;
   }
 
-  .ham-menu {
-    display: block;
+  .header {
+    .ham-menu {
+      display: block;
+    }
   }
 
   .nav,

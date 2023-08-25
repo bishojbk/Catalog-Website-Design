@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-left: -300px;
 
   label {
     display: block;
@@ -90,6 +91,8 @@
   z-index: 999;
   display: none;
 
+  @include search-model-lg();
+
   &_contents {
     display: flex;
     align-items: center;
@@ -114,18 +117,5 @@
 
   input::placeholder {
     font-size: 16px;
-  }
-}
-
-@media screen and (min-width: 3000px) {
-  .search-model {
-    width: 600px;
-    background-color: white;
-    color: black;
-    padding: 15px;
-    border-radius: 10px;
-    display: none;
-    left: auto;
-    right: auto;
   }
 }

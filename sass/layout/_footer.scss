@@ -14,7 +14,8 @@
   &_grid_container {
     display: flex;
     justify-content: space-between;
-    padding: 100px 0px;
+    @include padding();
+    @include footer-grid-container();
 
     svg {
       cursor: pointer;
@@ -67,17 +68,10 @@
   font-weight: normal;
 }
 
-@media screen and (max-width: 1544px) {
-  .footer_grid_container {
-    grid-gap: 50px;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .footer {
     &_container {
-      margin: 20px 40px;
-      padding: 20px;
+      padding: 0 20px;
     }
 
     &_grid_container {
@@ -91,7 +85,7 @@
     }
 
     .footer_bottom_container {
-      margin: 20px 40px;
+      padding: 20px;
       display: block;
 
       svg {
