@@ -14,8 +14,7 @@
   &_grid_container {
     display: flex;
     justify-content: space-between;
-    @include padding();
-    @include footer-grid-container();
+    padding: 100px 0px;
 
     svg {
       cursor: pointer;
@@ -61,15 +60,8 @@
     justify-content: space-between;
     padding: 30px 0px;
   }
-}
 
-.xsm-title {
-  color: white;
-  font-weight: normal;
-}
-
-@media screen and (max-width: 768px) {
-  .footer {
+  @include responsive(mobile) {
     &_container {
       padding: 0 20px;
     }
@@ -93,4 +85,9 @@
       }
     }
   }
+}
+
+.xsm-title {
+  color: white;
+  font-weight: normal;
 }

@@ -3,7 +3,7 @@
   text-align: center;
 
   &_container {
-    @include padding();
+    padding: 100px 0px;
   }
 
   .grid-items {

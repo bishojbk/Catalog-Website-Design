@@ -1,11 +1,22 @@
 .who-we-are {
   &_container {
-    @include padding();
+    padding: 100px 0px;
   }
 
   .gridcontainer {
     display: flex;
     gap: 10px;
+
+    @include responsive(mobile) {
+      display: block;
+      gap: 0px;
+      flex-wrap: wrap;
+    }
+
+    @include responsive(tablet) {
+      gap: 0px;
+      flex-wrap: wrap;
+    }
   }
 
   &_link {
@@ -25,8 +36,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-
-      @include padding();
+      padding: 100px 0px;
     }
   }
 }
@@ -35,59 +45,25 @@
   padding: 5px;
 }
 
-@media screen and (max-width: 1240px) {
-  .gridcontainer {
-    gap: 0px;
-    flex-wrap: wrap;
+.who-we-are_right {
+  @include responsive(tablet) {
+    margin: 0;
   }
 
-  .who-we-are_right {
+  @include responsive(mobile) {
     margin: 0;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .gridcontainer {
-    gap: 50px;
-    flex-wrap: wrap;
-  }
-
-  .who-we-are_carousel_container {
+.who-we-are_carousel_container {
+  @include responsive(mobile) {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     padding: 20px 0px;
 
     .left-arrow,
     .right-arrow {
       display: none;
     }
-  }
-}
-
-@media screen and (min-width: 2500px) {
-  .who-we-are_container {
-    .who-we-are_right {
-      margin: 0;
-    }
-
-    .gridcontainer {
-      display: flex;
-      flex-direction: column;
-
-      .who-we-are_left,
-      .who-we-are_right {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 100px;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .who-we-are_carousel_container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    padding: 20px 0;
   }
 }

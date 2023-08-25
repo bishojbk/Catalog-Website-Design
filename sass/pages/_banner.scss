@@ -13,12 +13,18 @@
   text-align: center;
   height: 800px;
 
-  &_container {
-    padding: 0 20px;
+  h5 {
+    padding: 30px 200px;
+    margin-bottom: 50px;
   }
 
-  h5 {
-    margin-bottom: 50px;
+  @include responsive(mobile) {
+    display: block;
+    padding: 250px 0px 0;
+
+    h5 {
+      padding: 0 20px;
+    }
   }
 }
 
@@ -42,12 +48,5 @@
         fill: aqua;
       }
     }
-  }
-}
-
-@media screen and (max-width: 440px) {
-  .banner {
-    display: block;
-    padding: 250px 0px 0;
   }
 }

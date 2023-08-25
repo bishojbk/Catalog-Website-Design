@@ -2,6 +2,16 @@
   text-align: center;
 
   &_container {
-    @include padding();
+    padding: 100px 0px;
+
+    h6 {
+      padding: 30px 200px;
+    }
+
+    @include responsive(mobile) {
+      h6 {
+        padding: 0;
+      }
+    }
   }
 }

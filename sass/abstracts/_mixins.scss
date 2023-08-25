@@ -1,26 +1,11 @@
-@mixin footer-grid-container() {
-  @media screen and (max-width: 1544px) {
-    .footer_grid_container {
-      grid-gap: 50px;
+@mixin responsive($breakpoint) {
+  @if $breakpoint == mobile {
+    @media (max-width: 768px) {
+      @content;
     }
-  }
-}
-
-@mixin form() {
-  @media screen and (max-width: 768px) {
-    .form-control {
-      display: block;
+  } @else if $breakpoint == tablet {
+    @media (min-width: 769px) and (max-width: 1024px) {
+      @content;
     }
-  }
-}
-
-@mixin padding() {
-  padding: 100px 0px;
-}
-
-@mixin search-model-lg() {
-  @media screen and (min-width: 3000px) {
-    left: auto;
-    right: auto;
   }
 }

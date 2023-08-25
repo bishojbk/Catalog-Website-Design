@@ -9,6 +9,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include responsive(mobile) {
+      margin: 20px;
+    }
+  }
+
+  .nav {
+    margin-left: -300px;
   }
 
   .header_logo_name {
@@ -19,6 +27,14 @@
   .ham-menu {
     position: relative;
     display: none;
+
+    @include responsive(tablet) {
+      display: block;
+    }
+
+    @include responsive(mobile) {
+      display: block;
+    }
   }
 
   .ham-open {
@@ -72,17 +88,14 @@
   }
 }
 
-@media screen and (max-width: 992px) {
-  .header_container {
-    margin: 20px;
+@include responsive(tablet) {
+  .nav,
+  .nav_search {
+    display: none;
   }
+}
 
-  .header {
-    .ham-menu {
-      display: block;
-    }
-  }
-
+@include responsive(mobile) {
   .nav,
   .nav_search {
     display: none;

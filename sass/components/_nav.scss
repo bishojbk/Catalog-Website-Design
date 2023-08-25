@@ -1,8 +1,6 @@
 .nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-left: -300px;
 
   label {
     display: block;
@@ -90,8 +88,6 @@
   top: 150px;
   z-index: 999;
   display: none;
-
-  @include search-model-lg();
 
   &_contents {
     display: flex;

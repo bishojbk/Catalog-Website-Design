@@ -4,7 +4,17 @@
   position: relative;
 
   &_container {
-    @include padding();
+    padding: 100px 0px;
+
+    h6 {
+      padding: 0px 200px;
+    }
+
+    @include responsive(mobile) {
+      h6 {
+        padding: 0;
+      }
+    }
   }
 
   .grid-items {
