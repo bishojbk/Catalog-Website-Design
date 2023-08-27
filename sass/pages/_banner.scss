@@ -18,7 +18,7 @@
     margin-bottom: 50px;
   }
 
-  @include responsive(mobile) {
+  @include responsive(sm) {
     display: block;
     padding: 250px 0px 0;
 

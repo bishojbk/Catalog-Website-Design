@@ -10,7 +10,7 @@
     justify-content: space-between;
     align-items: center;
 
-    @include responsive(mobile) {
+    @include responsive(sm) {
       margin: 20px;
     }
   }
@@ -28,11 +28,11 @@
     position: relative;
     display: none;
 
-    @include responsive(tablet) {
+    @include responsive(lg) {
       display: block;
     }
 
-    @include responsive(mobile) {
+    @include responsive(sm) {
       display: block;
     }
   }
@@ -88,14 +88,14 @@
   }
 }
 
-@include responsive(tablet) {
+@include responsive(lg) {
   .nav,
   .nav_search {
     display: none;
   }
 }
 
-@include responsive(mobile) {
+@include responsive(sm) {
   .nav,
   .nav_search {
     display: none;

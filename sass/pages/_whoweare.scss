@@ -7,13 +7,13 @@
     display: flex;
     gap: 10px;
 
-    @include responsive(mobile) {
+    @include responsive(sm) {
       display: block;
       gap: 0px;
       flex-wrap: wrap;
     }
 
-    @include responsive(tablet) {
+    @include responsive(lg) {
       gap: 0px;
       flex-wrap: wrap;
     }
@@ -46,17 +46,17 @@
 }
 
 .who-we-are_right {
-  @include responsive(tablet) {
+  @include responsive(lg) {
     margin: 0;
   }
 
-  @include responsive(mobile) {
+  @include responsive(sm) {
     margin: 0;
   }
 }
 
 .who-we-are_carousel_container {
-  @include responsive(mobile) {
+  @include responsive(sm) {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     padding: 20px 0px;

@@ -10,7 +10,7 @@
       padding: 0px 200px;
     }
 
-    @include responsive(mobile) {
+    @include responsive(sm) {
       h6 {
         padding: 0;
       }

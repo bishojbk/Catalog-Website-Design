@@ -4,7 +4,7 @@ form {
     grid-gap: 50px;
     grid-template-columns: repeat(2, 1fr);
 
-    @include responsive(mobile) {
+    @include responsive(sm) {
       display: block;
     }
   }
