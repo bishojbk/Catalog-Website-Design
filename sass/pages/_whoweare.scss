@@ -3,9 +3,9 @@
     padding: 100px 0px;
   }
 
-  .gridcontainer {
+  .flexcontainer {
     display: flex;
-    gap: 10px;
+    gap: 50px;
 
     @include responsive(sm) {
       display: block;
@@ -34,9 +34,19 @@
 
     &_container {
       display: flex;
-      align-items: center;
       justify-content: space-between;
+      transition: transform 0.3s ease-in-out;
       padding: 100px 0px;
+      align-items: center;
+    }
+
+    .left-arrow,
+    .right-arrow {
+      cursor: pointer;
+
+      &:hover {
+        animation: bounce 1s;
+      }
     }
   }
 }

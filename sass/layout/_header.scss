@@ -41,7 +41,7 @@
     width: 25px;
   }
 
-  .ham-cross {
+  .ham-close {
     position: absolute;
     top: -15px;
     right: 0px;
@@ -100,4 +100,8 @@
   .nav_search {
     display: none;
   }
+}
+
+.logo-opacity {
+  opacity: 0.5;
 }

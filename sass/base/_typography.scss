@@ -5,25 +5,19 @@ h2 {
   line-height: 72px;
 }
 
-h5 {
-  color: #e3e3e3;
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: normal;
-}
-
-h6 {
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 30px;
-  color: var(--h6-color);
-}
-
 span {
   font-size: 14px;
   font-family: "DM Sans", sans-serif;
   line-height: 21px;
   color: var(--span-color);
+}
+
+.details {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--h6-color);
+  margin: 50px 0;
 }
 
 .sm-title {
@@ -43,9 +37,10 @@ span {
 }
 
 p {
-  font-size: 16px;
-  color: var(--p-color);
+  font-size: 14px;
+  font-family: "DM Sans", sans-serif;
   line-height: 21px;
+  color: var(--span-color);
 }
 
 a {
@@ -53,4 +48,8 @@ a {
   text-decoration: none;
   font-size: 18px;
   font-weight: normal;
+}
+
+.info {
+  font-size: 16px;
 }

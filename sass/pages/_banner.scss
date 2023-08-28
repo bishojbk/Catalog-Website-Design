@@ -13,16 +13,18 @@
   text-align: center;
   height: 800px;
 
-  h5 {
-    padding: 30px 200px;
-    margin-bottom: 50px;
+  &_container {
+    p {
+      padding: 30px 200px;
+      color: white;
+    }
   }
 
   @include responsive(sm) {
     display: block;
     padding: 250px 0px 0;
 
-    h5 {
+    p {
       padding: 0 20px;
     }
   }
@@ -48,5 +50,20 @@
         fill: aqua;
       }
     }
+  }
+}
+
+.banner-black {
+  background: black;
+  opacity: 0.8;
+
+  h2,
+  p {
+    color: rgb(87, 84, 84);
+    opacity: 0.8;
+  }
+
+  a {
+    color: black;
   }
 }

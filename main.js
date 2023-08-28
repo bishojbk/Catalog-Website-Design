@@ -8,15 +8,19 @@ const checkbox = document.getElementById("checkbox");
 const dropdown = document.querySelector(".dropdown-content");
 const resources = document.getElementById("dropdown-resources");
 const search = document.querySelector(".nav_search");
-const searchBar = document.querySelector(".search-model");
+const searchBar = document.querySelector(".search-bar");
 const hamOpen = document.querySelector(".ham-open");
 const menuItems = document.querySelector(".menu-items");
 const cross = document.querySelector(".cross");
 const banner = document.querySelector(".banner");
-const hamCross = document.querySelector(".ham-cross");
+const hamCross = document.querySelector(".ham-close");
 const hamMenu = document.querySelector(".ham-menu");
 const headerLogo = document.querySelector(".header_logo");
 const header = document.querySelector(".header");
+const navbar = document.querySelector(".nav");
+const navItems = document.querySelector(".nav__list");
+const bannerButton = document.querySelector(".btn-banner");
+const campaign = document.querySelector(".campaigns");
 
 let count = false;
 
@@ -51,11 +55,25 @@ search.addEventListener("click", () => {
     searchBarVisible = true;
     document.body.classList.add("no-scroll");
     headerLogo.classList.add("unclickable");
+    headerLogo.classList.add("logo-opacity");
+    banner.classList.add("banner-black");
+    navbar.classList.add("nav-black");
+    navItems.classList.add("unclickable");
+    resources.classList.add("unclickable");
+    bannerButton.classList.add("unclickable");
+    campaign.classList.add("campaigns-black");
   } else {
     searchBar.style.display = "none";
     searchBarVisible = false;
     document.body.classList.remove("no-scroll");
     headerLogo.classList.remove("unclickable");
+    headerLogo.classList.remove("logo-opacity");
+    banner.classList.remove("banner-black");
+    navbar.classList.remove("nav-black");
+    navItems.classList.remove("unclickable");
+    resources.classList.remove("unclickable");
+    bannerButton.classList.remove("unclickable");
+    campaign.classList.remove("campaigns-black");
   }
 });
 
@@ -64,8 +82,13 @@ cross.addEventListener("click", () => {
   searchBarVisible = false;
   document.body.classList.remove("no-scroll");
   headerLogo.classList.remove("unclickable");
-
-
+  headerLogo.classList.remove("logo-opacity");
+  banner.classList.remove("banner-black");
+  navbar.classList.remove("nav-black");
+  navItems.classList.remove("unclickable");
+  resources.classList.remove("unclickable");
+  bannerButton.classList.remove("unclickable");
+  campaign.classList.remove("campaigns-black");
 });
 
 searchBar.addEventListener("click", (event) => {
