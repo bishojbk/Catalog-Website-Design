@@ -4,12 +4,12 @@
   &_container {
     padding: 100px 0px;
 
-    h6 {
-      padding: 30px 200px;
+    .details {
+      padding: 0px 200px;
     }
 
     @include responsive(sm) {
-      h6 {
+      .details {
         padding: 0;
       }
     }

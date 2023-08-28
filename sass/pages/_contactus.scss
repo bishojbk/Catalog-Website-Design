@@ -1,10 +1,22 @@
 .contact-us {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 100px 0px;
+  padding: 100px 0;
+
+  .contactus-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    @include responsive(lg) {
+      display: block;
+    }
+  }
 
   &_header {
     text-align: center;
+  }
+
+  @include responsive(lg) {
+    padding: 0 20px;
   }
 }

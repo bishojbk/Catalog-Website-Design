@@ -1194,45 +1194,51 @@
       <!--Contact Us Section-->
       <section class="contact-us">
         <div class="container">
-          <div class="contact-us_header">
-            <h4 class="sm-title">Contact Us</h4>
-            <p class="details">
-              If you have any further inquires, please let us know by filling
-              the form below
-            </p>
+          <div class="contactus-wrapper">
+            <div class="contact-us_header">
+              <h4 class="sm-title">Contact Us</h4>
+              <p class="details">
+                If you have any further inquires, please let us know by filling
+                the form below
+              </p>
+            </div>
+
+            <form action="submit">
+              <div class="form-control">
+                <div class="form-elements">
+                  <label>First name</label>
+                  <input
+                    type="text"
+                    placeholder="Firstname"
+                    class="firstname"
+                  />
+                </div>
+
+                <div class="form-elements">
+                  <label>Last name</label>
+                  <input type="text" placeholder="Lastname" class="lastname" />
+                </div>
+              </div>
+
+              <div class="form-elements">
+                <label>Email</label>
+                <input type="email" placeholder="Email" class="email" />
+              </div>
+
+              <div class="form-elements">
+                <label>Message</label>
+                <textarea
+                  rows="8"
+                  placeholder="Message"
+                  class="message"
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn-secondary" id="form-btn">
+                Submit
+              </button>
+            </form>
           </div>
-
-          <form action="submit">
-            <div class="form-control">
-              <div class="form-elements">
-                <h3>First name</h3>
-                <input type="text" placeholder="Firstname" class="firstname" />
-              </div>
-
-              <div class="form-elements">
-                <h3>Last name</h3>
-                <input type="text" placeholder="Lastname" class="lastname" />
-              </div>
-            </div>
-
-            <div class="form-elements">
-              <h3>Email</h3>
-              <input type="email" placeholder="Email" class="email" />
-            </div>
-
-            <div class="form-elements">
-              <h3>Message</h3>
-              <textarea
-                rows="8"
-                placeholder="Message"
-                class="message"
-              ></textarea>
-            </div>
-
-            <button type="submit" class="btn-secondary" id="form-btn">
-              Submit
-            </button>
-          </form>
         </div>
       </section>
 

@@ -14,9 +14,10 @@
   height: 800px;
 
   &_container {
-    p {
-      padding: 30px 200px;
-      color: white;
+    .details {
+      padding: 0px 200px;
+      color: #e3e3e3;
+      letter-spacing: 1px;
     }
   }
 
@@ -24,7 +25,7 @@
     display: block;
     padding: 250px 0px 0;
 
-    p {
+    .details {
       padding: 0 20px;
     }
   }
