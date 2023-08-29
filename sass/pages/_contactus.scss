@@ -1,6 +1,10 @@
 .contact-us {
   padding: 100px 0;
 
+  @include responsive(sm) {
+    padding: 50px 20px;
+  }
+
   .contactus-wrapper {
     display: flex;
     justify-content: center;
@@ -14,9 +18,5 @@
 
   &_header {
     text-align: center;
-  }
-
-  @include responsive(lg) {
-    padding: 0 20px;
   }
 }

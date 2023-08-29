@@ -3,7 +3,7 @@
   text-align: center;
   position: relative;
 
-  &_container {
+  &_wrapper {
     padding: 100px 0px;
 
     .details {
@@ -11,6 +11,8 @@
     }
 
     @include responsive(sm) {
+      padding: 100px 20px;
+
       .details {
         padding: 0;
       }

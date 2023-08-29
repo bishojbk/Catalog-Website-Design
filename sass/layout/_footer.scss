@@ -1,5 +1,5 @@
 .footer {
-  &_background {
+  &_upper {
     background: linear-gradient(
         180deg,
         rgba(0, 41, 83, 0.8) 0%,
@@ -9,12 +9,21 @@
     background-size: cover;
     background-position: center center;
     opacity: 0.8;
+
+    @include responsive(sm) {
+      padding: 0px 20px;
+    }
   }
 
   &_grid_container {
     display: flex;
     justify-content: space-between;
     padding: 100px 0px;
+
+    @include responsive(sm) {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
 
     svg {
       cursor: pointer;
@@ -25,15 +34,30 @@
 
   &_links {
     display: inline-block;
+    padding-inline-start: 30px;
 
-    h3 {
-      color: white;
-      margin-bottom: 35px;
+    @include responsive(sm) {
+      margin-right: 50px;
+      padding: 0;
     }
 
     li {
       list-style: none;
       margin-bottom: 20px;
+      padding-inline-start: 30px;
+
+      @include responsive(sm) {
+        padding: 0;
+      }
+
+      span {
+        color: white;
+        display: block;
+        font-size: 18px;
+        margin: 20px 0 30px;
+        font-weight: 800;
+        font-family: inherit;
+      }
 
       a {
         font-size: 14px;
@@ -54,30 +78,18 @@
     }
   }
 
-  .footer_bottom_container {
+  .footer_bottom {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 30px 0px;
-  }
 
-  @include responsive(sm) {
-    &_container {
-      padding: 0 20px;
+    p {
+      font-size: 16px;
     }
 
-    &_grid_container {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-    }
-
-    .footer_links {
-      margin-right: 50px;
-      padding: 0;
-    }
-
-    .footer_bottom_container {
-      padding: 20px;
+    @include responsive(sm) {
+      padding: 50px 20px;
       display: block;
 
       svg {

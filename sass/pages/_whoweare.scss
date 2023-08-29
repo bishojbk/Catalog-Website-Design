@@ -1,6 +1,10 @@
 .who-we-are {
-  &_container {
+  &_wrapper {
     padding: 100px 0px;
+
+    @include responsive(sm) {
+      padding: 50px 20px;
+    }
   }
 
   .flexcontainer {
@@ -27,25 +31,94 @@
 
   &_right {
     margin-top: 150px;
+
+    @include responsive(lg) {
+      margin: 0;
+    }
+
+    @include responsive(sm) {
+      margin: 0;
+    }
   }
 
   &_carousel {
     background-color: var(--background-color);
 
-    &_container {
-      display: flex;
-      justify-content: space-between;
-      transition: transform 0.3s ease-in-out;
-      padding: 100px 0px;
-      align-items: center;
+    .container {
+      position: relative;
+
+      i {
+        top: 48%;
+        height: 50px;
+        width: 50px;
+        cursor: pointer;
+        position: absolute;
+        font-size: 1.25rem;
+        text-align: center;
+        line-height: 50px;
+        transform: translateY(-50%);
+        transition: transform 0.1s linear;
+      }
     }
 
-    .left-arrow,
-    .right-arrow {
-      cursor: pointer;
+    i:active {
+      transform: translateY(-50%) scale(0.85);
+    }
 
-      &:hover {
-        animation: bounce 1s;
+    i:first-child {
+      left: 0px;
+    }
+    i:last-child {
+      right: 0px;
+    }
+
+    @include responsive(lg) {
+      // i {
+      //   display: none;
+      // }
+    }
+
+    &_container {
+      max-width: 1046px;
+      margin-right: auto;
+      margin-left: auto;
+      padding-right: 0.75rem;
+      padding-left: 0.75rem;
+
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-columns: calc(100% / 4);
+      overflow: hidden;
+      padding: 100px 0px;
+
+      .carousel-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      @include responsive(lg) {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: calc(100% / 3);
+        overflow: hidden;
+        padding: 50px 20px;
+      }
+
+      @include responsive(sm) {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: calc(100% / 2);
+        overflow: hidden;
+        padding: 50px 20px;
+      }
+
+      @include responsive(xsm) {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: calc(100%);
+        overflow: hidden;
+        padding: 50px 20px;
       }
     }
   }
@@ -53,27 +126,4 @@
 
 .company-name {
   padding: 5px;
-}
-
-.who-we-are_right {
-  @include responsive(lg) {
-    margin: 0;
-  }
-
-  @include responsive(sm) {
-    margin: 0;
-  }
-}
-
-.who-we-are_carousel_container {
-  @include responsive(sm) {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    padding: 20px 0px;
-
-    .left-arrow,
-    .right-arrow {
-      display: none;
-    }
-  }
 }
