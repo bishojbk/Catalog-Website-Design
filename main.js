@@ -7,7 +7,6 @@ const submit = document.getElementById("form-btn");
 const dropdown = document.querySelector(".dropdown-content");
 const resources = document.getElementById("dropdown-resources");
 const search = document.querySelector(".nav_search_icon");
-const menuItems = document.querySelector(".menu-items");
 const cross = document.querySelector(".cross");
 const hamCross = document.querySelector(".ham-close");
 const hamMenu = document.querySelector(".ham-menu");
